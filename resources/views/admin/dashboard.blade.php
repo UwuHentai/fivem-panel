@@ -12,18 +12,18 @@
                         <div id="accordion">
                             <div class="card">
                                 @foreach($tables as $table)
-                                    <div class="card-header" id="heading{{ $table->Tables_in_panel }}">
+                                    <div class="card-header" id="heading{{ $table->$database }}">
                                         <h5 class="mb-0">
-                                            <button class="btn btn-dark text-truncate" data-toggle="collapse" data-target="#collapse{{ $table->Tables_in_panel }}" aria-expanded="true" aria-controls="collapse{{ $table->Tables_in_panel }}">
+                                            <button class="btn btn-dark text-truncate" data-toggle="collapse" data-target="#collapse{{ $table->$database }}" aria-expanded="true" aria-controls="collapse{{ $table->$database }}">
                                                                                                
                                                 {{ str_replace('_', ' ', $table->$database); }}
                                             </button>
                                         </h5>
                                     </div>
-                                    <div id="collapse{{ $table->Tables_in_panel }}" class="collapse" aria-labelledby="heading{{ $table->Tables_in_panel }}" data-parent="#accordion">
+                                    <div id="collapse{{ $table->$database }}" class="collapse" aria-labelledby="heading{{ $table->$database }}" data-parent="#accordion">
                                         <h5 class="m-3 h-4">Actions: </h5>
                                         <div class="card-body">
-                                            @if ($table->Tables_in_panel == 'vrp_users')
+                                            @if ($table->$database == 'vrp_users')
                                                 <button class="btn btn-info text-light ban-user">BAN</button> <br> <hr>
                                                 <button class="btn btn-info text-light unban-user">UNBAN</button> <br> <hr>
                                                 <button class="btn btn-info text-light whitelist-user">WHITELIST</button> <br> <hr>
