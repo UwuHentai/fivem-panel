@@ -5,4 +5,8 @@
 <li>Whitelist user</li>
 <li>UnWhitelist user</li>
 
+<h4>Next features:</h4>
+<li>Add money</li>
+<li>Remove money</li>
+
 For any questions -> Discord: https://discord.io/fivem-panel
