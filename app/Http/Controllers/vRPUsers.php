@@ -20,8 +20,8 @@ class vRPUsers extends Controller
             $id = $request->input('id');
             $reason = $request->input('reason');
             $ban = DB::table('vrp_users')->where('id', $id)->update(['banned' => 1]);
-            $ban_reason = DB::table('vrp_users')->where('id', $id)->update(['banreason' => $reason . " [PANEL]"]);
-            $admin = DB::table('vrp_users')->where('id', $id)->update(['banadmin' => Auth::user()->name]);
+            // $ban_reason = DB::table('vrp_users')->where('id', $id)->update(['banreason' => $reason . " [PANEL]"]);
+            // $admin = DB::table('vrp_users')->where('id', $id)->update(['banadmin' => Auth::user()->name]);
             return redirect()->back();
         } else {
             return view('panel/home');
@@ -34,8 +34,8 @@ class vRPUsers extends Controller
             $id = $request->input('id');
             $reason = $request->input('reason');
             $unban = DB::table('vrp_users')->where('id', $id)->update(['banned' => 0]);
-            $unban_reason = DB::table('vrp_users')->where('id', $id)->update(['banreason' => $reason . " [PANEL]"]);
-            $admin = DB::table('vrp_users')->where('id', $id)->update(['banadmin' => Auth::user()->name]);
+            // $unban_reason = DB::table('vrp_users')->where('id', $id)->update(['banreason' => $reason . " [PANEL]"]);
+            // $admin = DB::table('vrp_users')->where('id', $id)->update(['banadmin' => Auth::user()->name]);
             return redirect()->back();
         } else {
             return view('panel/home');

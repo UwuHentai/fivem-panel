@@ -40398,4 +40398,36 @@ $('.unwhitelist-user').click(function(){
     document.getElementById('unwhitelist-user').style.display = "block";
   }
 });
+
+$('.add-money-user-wallet').click(function(){
+  if (document.getElementById('add-money-user-wallet').style.display == "block") {
+    document.getElementById('add-money-user-wallet').style.display = "none";
+  } else {
+    document.getElementById('add-money-user-wallet').style.display = "block";
+  }
+});
+
+$('.remove-money-user-wallet').click(function(){
+  if (document.getElementById('remove-money-user-wallet').style.display == "block") {
+    document.getElementById('remove-money-user-wallet').style.display = "none";
+  } else {
+    document.getElementById('remove-money-user-wallet').style.display = "block";
+  }
+});
+
+$('.add-money-user-bank').click(function(){
+  if (document.getElementById('add-money-user-bank').style.display == "block") {
+    document.getElementById('add-money-user-bank').style.display = "none";
+  } else {
+    document.getElementById('add-money-user-bank').style.display = "block";
+  }
+});
+
+$('.remove-money-user-bank').click(function(){
+  if (document.getElementById('remove-money-user-bank').style.display == "block") {
+    document.getElementById('remove-money-user-bank').style.display = "none";
+  } else {
+    document.getElementById('remove-money-user-bank').style.display = "block";
+  }
+});
 ;

@@ -24,3 +24,7 @@ Route::get('vrp_users/ban', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_ban
 Route::get('vrp_users/unban', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_unban'])->name('unban.user');
 Route::get('vrp_users/whitelist', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_whitelist'])->name('whitelist.user');
 Route::get('vrp_users/unwhitelist', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_unwhitelist'])->name('unwhitelist.user');
+Route::get('vrp_users_money/addmoneywallet', [App\Http\Controllers\vRPUsersMoney::class, 'vRPUsersMoney_addwallet'])->name('addmoneywallet.user');
+Route::get('vrp_users_money/removemoneywallet', [App\Http\Controllers\vRPUsersMoney::class, 'vRPUsersMoney_removewallet'])->name('removemoneywallet.user');
+Route::get('vrp_users_money/addmoneybank', [App\Http\Controllers\vRPUsersMoney::class, 'vRPUsersMoney_addbank'])->name('addmoneybank.user');
+Route::get('vrp_users_money/removemoneybank', [App\Http\Controllers\vRPUsersMoney::class, 'vRPUsersMoney_removebank'])->name('removemoneybank.user');
