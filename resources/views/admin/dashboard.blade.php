@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<p style="display:none">{{$database = "Tables_in_" . env('DB_DATABASE')}}  </p>
 <div class="container">
     <div class="row justify-content-left">
         <div class="col-md-12 d-flex">
@@ -14,7 +15,8 @@
                                     <div class="card-header" id="heading{{ $table->Tables_in_panel }}">
                                         <h5 class="mb-0">
                                             <button class="btn btn-dark text-truncate" data-toggle="collapse" data-target="#collapse{{ $table->Tables_in_panel }}" aria-expanded="true" aria-controls="collapse{{ $table->Tables_in_panel }}">
-                                                {{ str_replace('_', ' ', $table->Tables_in_panel); }}
+                                                                                               
+                                                {{ str_replace('_', ' ', $table->$database); }}
                                             </button>
                                         </h5>
                                     </div>

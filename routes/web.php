@@ -13,13 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
+Route::get('panel/home', function () {return view('panel/home');})->name('panel.home');
 
 Auth::routes();
 
-Route::get('dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('admin/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('admin.dashboard');
 
 Route::get('vrp_users/ban', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_ban'])->name('ban.user');
 Route::get('vrp_users/unban', [App\Http\Controllers\vRPUsers::class, 'vRPUsers_unban'])->name('unban.user');

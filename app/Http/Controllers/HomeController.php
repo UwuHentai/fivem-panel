@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Auth;
+
 class HomeController extends Controller
 {
     /**
@@ -23,8 +25,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $tables = DB::select('SHOW TABLES');
-        $vRPUsers = DB::table('vrp_users')->select('id')->get();
-        return view('dashboard',['tables' => $tables, 'vRPUsers' => $vRPUsers] );
+        if (Auth::user()->administrator == 1) {
+            $tables = DB::select('SHOW TABLES');
+            $vRPUsers = DB::table('vrp_users')->select('id')->get();
+            return view('admin/dashboard',['tables' => $tables, 'vRPUsers' => $vRPUsers] );
+        } else {
+            return view('panel/home');
+        }
     }
 }

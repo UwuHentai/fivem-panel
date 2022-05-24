@@ -47,7 +47,7 @@
                             <div class="bg-dark p-3">
                                 <div class="ml-12">
                                     <div class="text-gray-600 dark:text-gray-400 ">
-                                        <button class="btn btn-light"><a href="{{ route('dashboard') }}" class="text-decoration-none text-dark">Panel</a></button>
+                                        <button class="btn btn-light"><a href="{{ route('panel.home') }}" class="text-decoration-none text-dark">Panel</a></button>
                                     </div>
                                 </div>
                             </div>
