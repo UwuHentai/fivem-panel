@@ -10,4 +10,5 @@
 <li>Add money</li>
 <li>Remove money</li>
 
+<br><hr>
 For any questions -> Discord: https://discord.io/fivem-panel
