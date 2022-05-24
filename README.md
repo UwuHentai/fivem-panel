@@ -5,6 +5,7 @@
 <li>Whitelist user</li>
 <li>UnWhitelist user</li>
 
+<h3>Version 0.0.2</h3>
 <h4>Next features:</h4>
 <li>Add money</li>
 <li>Remove money</li>
