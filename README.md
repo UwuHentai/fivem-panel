@@ -1,10 +1,15 @@
 
-<h3>Version 0.0.2</h3>
+<h3>Version 0.0.3</h3>
+<h4>Next features:</h4>
+<li>Add vehicle</li>
+<li>Remove vehicle</li>
+<hr>
+<h1>Version 0.0.2</h1>
 <h4>Next features:</h4>
 <li>Add money</li>
 <li>Remove money</li>
 <hr>
-<h1>Version 0.0.1</h1>
+<h3>Version 0.0.1</h3>
 <h4>Feature added:</h4>
 <li>Ban user</li>
 <li>Unban user</li>
