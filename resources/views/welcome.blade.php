@@ -75,7 +75,7 @@
                             </svg>
 
                             <a href="https://discord.io/fivem-panel" class="ml-1 text-decoration-none text-light">
-                                Support
+                                Discord
                             </a>
                         </div>
                     </div>
