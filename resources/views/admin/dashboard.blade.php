@@ -15,7 +15,6 @@
                                     <div class="card-header" id="heading{{ $table->$database }}">
                                         <h5 class="mb-0">
                                             <button class="btn btn-dark text-truncate" data-toggle="collapse" data-target="#collapse{{ $table->$database }}" aria-expanded="true" aria-controls="collapse{{ $table->$database }}">
-                                                                                               
                                                 {{ str_replace('_', ' ', $table->$database); }}
                                             </button>
                                         </h5>
@@ -54,8 +53,6 @@
             </div>
             <div class="col-md-9 m-1">
                 <div class="card">
-                    <div class="card-header">{{ __('Database Tables') }}</div>
-
                     <div class="card-body">
                         <div id="accordion" class="mircea">
                             <div class="card">
