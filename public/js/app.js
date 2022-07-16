@@ -40430,4 +40430,5 @@ $('.remove-money-user-bank').click(function(){
     document.getElementById('remove-money-user-bank').style.display = "block";
   }
 });
+
 ;
