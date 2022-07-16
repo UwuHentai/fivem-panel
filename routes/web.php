@@ -18,3 +18,11 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+
+// FiveM-Server actions
+Route::get('/dashboard/vrp-users/ban', [App\Http\Controllers\vRPUsers::class, 'ban'])->name('fivem-ban'); 
+Route::get('/dashboard/vrp-users/unban', [App\Http\Controllers\vRPUsers::class, 'unban'])->name('fivem-unban');
+Route::get('/dashboard/vrp-users/whitelist', [App\Http\Controllers\vRPUsers::class, 'whitelist'])->name('fivem-whitelist');
+Route::get('/dashboard/vrp-users/unwhitelist', [App\Http\Controllers\vRPUsers::class, 'unwhitelist'])->name('fivem-unwhitelist');
