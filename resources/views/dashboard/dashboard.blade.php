@@ -74,10 +74,10 @@
                 </div>
             </div> 
             <div class="col-sm-9"> 
-                <div id="ban-user">
+                <div id="ban-user" style="display: none;">
                     <form class="m-5" action="{{ route('fivem-ban') }}" method="GET">
                         @csrf
-                        <div class="card" style="display: none;">
+                        <div class="card">
                             <div class="card-header">
                                 BAN USER
                             </div>
