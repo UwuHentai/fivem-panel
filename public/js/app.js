@@ -40367,37 +40367,37 @@ Vue.compile = compileToFunctions;
 /******/ 	
 /******/ })()
 
-$('.ban-user').click(function(){
+function show_ban(){
   if (document.getElementById('ban-user').style.display == "block") {
     document.getElementById('ban-user').style.display = "none";
   } else {
     document.getElementById('ban-user').style.display = "block";
   }
-});
+}
 
-$('.unban-user').click(function(){
+function show_unban(){
   if (document.getElementById('unban-user').style.display == "block") {
     document.getElementById('unban-user').style.display = "none";
   } else {
     document.getElementById('unban-user').style.display = "block";
   }
-});
+}
 
-$('.whitelist-user').click(function(){
+function show_whitelist(){
   if (document.getElementById('whitelist-user').style.display == "block") {
     document.getElementById('whitelist-user').style.display = "none";
   } else {
     document.getElementById('whitelist-user').style.display = "block";
   }
-});
+}
 
-$('.unwhitelist-user').click(function(){
+function show_unwhitelist(){
   if (document.getElementById('unwhitelist-user').style.display == "block") {
     document.getElementById('unwhitelist-user').style.display = "none";
   } else {
     document.getElementById('unwhitelist-user').style.display = "block";
   }
-});
+}
 
 $('.add-money-user-wallet').click(function(){
   if (document.getElementById('add-money-user-wallet').style.display == "block") {

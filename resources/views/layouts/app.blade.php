@@ -61,7 +61,7 @@
                                     <a class="dropdown-item bg-dark text-light" href="">Profile</a>
                                 
                                     @if (Auth::user()->administrator)
-                                        <a class="dropdown-item bg-dark text-light" href="">Dashboard</a>
+                                        <a class="dropdown-item bg-dark text-light" href="{{ route('dashboard') }}">Dashboard</a>
                                     @endif
 
                                     <a class="dropdown-item bg-dark text-light mt-2" href="{{ route('logout') }}"

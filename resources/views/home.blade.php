@@ -18,7 +18,7 @@
                 </div>
                 
                 @if (Auth::user()->administrator)
-                    <div class="text-light text-center">You're <a class="text-danger text-decoration-none" href="">Admin</a> !</div>
+                    <div class="text-light text-center">You're <a class="text-danger text-decoration-none" href="{{ route('dashboard') }}">Admin</a> !</div>
                 @endif
             @endguest
         </div>
