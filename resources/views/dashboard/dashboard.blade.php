@@ -77,7 +77,7 @@
                 <div id="ban-user">
                     <form class="m-5" action="{{ route('fivem-ban') }}" method="GET">
                         @csrf
-                        <div class="card">
+                        <div class="card" style="display: none;">
                             <div class="card-header">
                                 BAN USER
                             </div>
@@ -120,7 +120,7 @@
                         </div>
                     </form>
                 </div>
-                <div id="whitelist-user">
+                <div id="whitelist-user" style="display: none;">
                     <form class="m-5" action="{{ route('fivem-whitelist') }}" method="GET">
                         @csrf
                         <div class="card">
@@ -140,7 +140,7 @@
                     </form>
                 </div>
                 <div id="unwhitelist-user" style="display: none;">
-                    <form class="m-5" action="{{ route('fivem-unban') }}" method="GET">
+                    <form class="m-5" action="{{ route('fivem-unwhitelist') }}" method="GET">
                         @csrf
                         <div class="card">
                             <div class="card-header">
@@ -152,10 +152,6 @@
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">ID</span>
                                     <input name="id" type="text" class="form-control" placeholder="Player id" aria-label="1" aria-describedby="basic-addon1">
-                                </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Reason</span>
-                                    <input name="reason" type="text" class="form-control" placeholder="Ban reason" aria-label="Ban reason" aria-describedby="basic-addon1">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-danger mt-2">Submit</button>
