@@ -8,7 +8,7 @@
 </p>
 
 <hr>
-<h3>Version 0.0.1</h3>
+<h2>Version 0.0.1</h3>
 <h4>Feature added:</h4>
 <li>Ban user</li>
 <li>Unban user</li>
