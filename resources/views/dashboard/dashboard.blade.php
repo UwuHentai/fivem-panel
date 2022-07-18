@@ -82,7 +82,7 @@
                                 BAN USER
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>
+                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the user will get banned but will not be kicked out from the server! </h5>
                                 <p class="card-text">In the future versions will be.</p>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">ID</span>
@@ -105,8 +105,8 @@
                                 UNBAN USER
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>
-                                <p class="card-text">In the future versions will be.</p>
+                                {{--<h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>--}}
+                                {{--<p class="card-text">In the future versions will be.</p>--}}
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">ID</span>
                                     <input name="id" type="text" class="form-control" placeholder="Player id" aria-label="1" aria-describedby="basic-addon1">
@@ -128,7 +128,7 @@
                                 WHITELIST USER
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>
+                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the user will get unwhitelisted but will not be kicked out from the server! </h5>
                                 <p class="card-text">In the future versions will be.</p>
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">ID</span>
@@ -147,8 +147,8 @@
                                 UNWHITELIST USER
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>
-                                <p class="card-text">In the future versions will be.</p>
+                                {{--<h5 class="card-title">Pay <span class="text-danger">attention</span> the use will get banned but will not be kicked out from the server! </h5>--}}
+                                {{--<p class="card-text">In the future versions will be.</p>--}}
                                 <div class="input-group mb-3">
                                     <span class="input-group-text" id="basic-addon1">ID</span>
                                     <input name="id" type="text" class="form-control" placeholder="Player id" aria-label="1" aria-describedby="basic-addon1">
